@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -47,15 +47,15 @@ ul {
   padding: 0px;
 }
 
-li, h3 {
+.task-list-item, .title {
   list-style: none;
 }
 
-input, button {
+.input, .button {
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
