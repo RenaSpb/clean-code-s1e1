@@ -26,19 +26,19 @@ body {
   }
 }
 
-.centered-main-page-element {
+.todo-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.task-item {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.task-input-group {
   display: flex;
 }
 
