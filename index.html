@@ -3,71 +3,54 @@
 <head>
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="page">
-<header class="app-header">
-  <img
-    src="./eisenhower-matrix.jpg"
-    alt="The Eisenhower Matrix"
-  >
-  <a
-    class="more-info"
-    href="https://goal-life.com/page/method/matrix-eisenhower"
-  >
-    Want more details?
-  </a>
+<header class="header">
+  <img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix">
+  <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
 </header>
-
-<main class="todo-container">
-  <section id="add-item-section">
-    <label for="new-task">Add Item</label>
-    <div class="task-input-group">
-      <input
-        id="new-task"
-        class="task-item"
-        type="text">
-      <button class="button">Add</button>
+<main class="todo">
+  <section class="todo__section todo__section_type_add">
+    <label class="todo__label" for="new-task">Add Item</label>
+    <div class="todo__input-group">
+      <input id="new-task" class="todo__input todo__input_type_new" type="text">
+      <button class="todo__button todo__button_type_add">Add</button>
     </div>
   </section>
-
-  <section class="todo-section">
-    <h3 class="title">Todo</h3>
-    <ul id="incomplete-tasks">
-      <li>
-        <input type="checkbox">
-        <label class="task-item">Pay Bills</label>
-        <input type="text" class="task-item">
-        <button class="button edit">Edit</button>
-        <button class="button delete">
-          <img src="./remove.svg" alt="Delete task">
+  <section class="todo__section todo__section_type_incomplete">
+    <h3 class="todo__title">Todo</h3>
+    <ul class="todo__list">
+      <li class="todo__item">
+        <input class="todo__checkbox" type="checkbox">
+        <label class="todo__task">Pay Bills</label>
+        <input type="text" class="todo__input">
+        <button class="todo__button todo__button_type_edit">Edit</button>
+        <button class="todo__button todo__button_type_delete">
+          <img class="todo__icon" src="./remove.svg" alt="Delete task">
         </button>
       </li>
-      <li class="edit-mode">
-        <input type="checkbox">
-        <label class="task-item">Go Shopping</label>
-        <input
-          type="text"
-          value="Go Shopping"
-          class="task-item">
-        <button class="button edit">Save</button>
-        <button class="button delete">
-          <img src="./remove.svg" alt="Delete task">
+      <li class="todo__item todo__item_edit-mode">
+        <input class="todo__checkbox" type="checkbox">
+        <label class="todo__task">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="todo__input">
+        <button class="todo__button todo__button_type_edit">Save</button>
+        <button class="todo__button todo__button_type_delete">
+          <img class="todo__icon" src="./remove.svg" alt="Delete task">
         </button>
       </li>
     </ul>
   </section>
-
-  <section class="completed-section">
-    <h3 class="title">Completed</h3>
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked>
-        <label class="task-item">See the Doctor</label>
-        <input type="text" class="task-item">
-        <button class="button edit">Edit</button>
-        <button class="button delete">
-          <img src="./remove.svg" alt="Delete task">
+  <section class="todo__section todo__section_type_completed">
+    <h3 class="todo__title">Completed</h3>
+    <ul class="todo__list">
+      <li class="todo__item">
+        <input class="todo__checkbox" type="checkbox" checked>
+        <label class="todo__task">See the Doctor</label>
+        <input type="text" class="todo__input">
+        <button class="todo__button todo__button_type_edit">Edit</button>
+        <button class="todo__button todo__button_type_delete">
+          <img class="todo__icon" src="./remove.svg" alt="Delete task">
         </button>
       </li>
     </ul>
